@@ -1,0 +1,203 @@
+/*The Holy Wongian Style Sheet*/
+
+/* Core
+------------------------------------------*/
+
+body {
+	/*background:#A9F5F2;[/disabled]*/
+	background-image:
+		url(images/02.jpg);
+	font-size:16px;
+	margin: 0;
+}
+
+h1 {
+	color:#2C3539;
+	font-family: 'MedievalSharp', cursive;
+	text-align: center;
+	font-size: 48px;
+}
+
+a:hover {
+	color:silver;
+}
+
+.wrapper{
+	width:88%;
+	max-width: 960px;
+	margin:0 auto;
+}
+
+p{
+	font-size:18px;
+	text-align: center;
+	padding: 0 5em;
+}
+
+.container{
+	background: white;
+	padding: 1em;
+}
+
+footer,
+header{
+	width:88%;
+	max-width: 960px;
+	margin:0 auto;
+	padding-left: 1em;
+	background: rgba(194,223,255, 0.8);
+	/*border: solid black;*/
+}
+
+li{
+	text-align: center;
+	list-style: none;
+}
+
+h2{
+	text-align: center;
+	font-size: 32px;
+	font-family: 'MedievalSharp', cursive;
+}
+
+h3{
+	text-align: center;
+}
+
+ol{
+	padding: 0;
+}
+
+/* Navigation
+------------------------------------------*/
+
+.nav {
+	border:solid black 1px;
+}
+
+nav ul {
+	padding:0;
+	list-style:none;
+	display:flex;
+	margin-left: 93px;
+}
+
+nav ul li {
+	margin-right:.5em;
+}
+
+nav ul li a {
+	background:#d7d9db;
+	padding: .5em 1em;
+	transition: all 0.2s ease-in-out;
+	color: #1a75ff;
+	font-family: sans-serif;
+	text-decoration: none;
+	border:solid #90959a 2px;
+}
+
+nav ul li a:hover {
+	background:gold;
+}
+
+/* Floats
+----------------*/
+
+.align-right {
+	float:right;
+	margin:1em 0 1em 1;
+}
+
+.align-left {
+	float:left;
+	margin:0;
+}
+
+.align-center{
+	margin: auto;
+	display:block;
+}
+
+/* Animation Move
+------------------------------------------*/
+@keyframes position {
+	0% {
+		left:-145px;
+	}
+	25% {
+		left:-270px;
+	}
+	75% {
+		left:-145px;
+	}
+	90% {
+		left:-270px;
+	}
+	100% {
+		left:-145px;
+	}
+}
+
+.move {
+	position: relative;
+	animation:position 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* Social Media
+------------------------------------------*/
+
+.social-channels {
+	list-style: none;
+	padding: 0;
+}
+
+.social-channels li {
+	display:inline-block;
+	margin-right:.5em;
+}
+
+.social-channels a {
+	display:block;
+	width: 32px;
+	height:32px;
+	border-radius: 3px;
+	transition: all .2s ease-in-out;
+	/* Following 3 for hiding text */
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden; 
+}
+
+.social-channels a:hover {
+	opacity:0.7;
+}
+
+.facebook,
+.youtube,
+.twitter,
+.github,
+.googleplus {
+	background: url(images/sprite.svg);
+}
+
+.facebook {
+	background-position:0 0;
+}
+
+.youtube {
+	background-position:-32px -64px;
+}
+
+.twitter {
+	background-position:0 -64px;
+}
+
+.github {
+	background-position:0 -32px;
+}
+
+.googleplus {
+	background-position:-32px -32px;
+}
