@@ -6,7 +6,8 @@
 body {
 	/*background:#A9F5F2;[/disabled]*/
 	background-image:
-		url(images/02.jpg);
+		url(images/41.jpg);
+	background-size: cover;
 	font-size:16px;
 	margin: 0;
 }
@@ -79,7 +80,7 @@ nav ul {
 	padding:0;
 	list-style:none;
 	display:flex;
-	margin-left: 93px;
+	margin-left: 37em;
 }
 
 nav ul li {
